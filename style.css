@@ -351,3 +351,39 @@ template {
 }
 
 /* END NORMALIZE.CSS */
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template: 180px 1fr / 300px 1fr;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  background-color: blue;
+}
+
+.sidebar-logo {
+  grid-row: 1 / 2;
+  background-color: purple;
+}
+
+header {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-rows: 80px 100px;
+  background-color: green;
+}
+
+.header-top {
+  grid-row: 1 / 2;
+  background-color: darkgreen;
+}
+
+main {
+  background-color: grey;
+}

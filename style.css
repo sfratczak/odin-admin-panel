@@ -364,11 +364,36 @@ template {
   display: grid;
   grid-template-rows: 80px 1fr;
   background-color: blue;
+  font-size: 1.25rem;
+}
+
+.sidebar-logo,
+.sidebar-nav li {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
 }
 
 .sidebar-logo {
   grid-row: 1 / 2;
   background-color: purple;
+  font-size: 1.75rem;
+}
+
+.sidebar-logo img {
+  height: 3rem;
+  justify-self: center;
+}
+
+.sidebar-nav ul {
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.sidebar-nav img {
+  height: 2rem;
+  justify-self: center;
+  margin: 0.75rem 0;
 }
 
 header {

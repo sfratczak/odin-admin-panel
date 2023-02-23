@@ -367,11 +367,15 @@ template {
   font-size: 1.25rem;
 }
 
-.sidebar-logo,
-.sidebar-nav li {
+.sidebar-logo a,
+.sidebar-nav a {
   display: grid;
   grid-template-columns: 80px 1fr;
   align-items: center;
+}
+
+.sidebar-logo a {
+  grid-template-rows: 80px;
 }
 
 .sidebar-logo {
@@ -390,10 +394,14 @@ template {
   margin: 0;
 }
 
+.sidebar-nav li {
+  margin: 0.5rem 0;
+}
+
 .sidebar-nav img {
-  height: 2rem;
+  height: 1.75rem;
   justify-self: center;
-  margin: 0.75rem 0;
+  margin: 0.5rem 0;
 }
 
 header {

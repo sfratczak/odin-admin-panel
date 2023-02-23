@@ -415,6 +415,44 @@ header {
 .header-top {
   grid-row: 1 / 2;
   background-color: darkgreen;
+  padding: 0 45px;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: minmax(300px, 600px) 300px;
+}
+
+.header-search {
+  display: flex;
+  padding-right: 45px;
+}
+
+.header-search label {
+  display: grid;
+  align-items: center;
+}
+
+.header-search label img {
+  height: 1.75rem;
+  margin-right: 16px;
+}
+
+.header-search #searchbar {
+  flex: 1;
+  height: 1.75rem;
+  border-radius: 1rem;
+  border: none;
+  padding-left: 2ch;
+}
+
+.header-profile {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+}
+
+.goto-profile img {
+  height: 45px;
+  border-radius: 100%;
 }
 
 main {

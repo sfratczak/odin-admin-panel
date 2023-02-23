@@ -18,8 +18,14 @@
         </div>
         <nav class="sidebar-nav">
           <ul>
-            <li><a href=""><img src="./icons/home.svg" alt="Home icon" />Home</li></a>
-            <li><a href=""><img src="./icons/user.svg" alt="Profile icon" />Profile</li></a>
+            <li>
+              <a href=""><img src="./icons/home.svg" alt="Home icon" />Home</a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./icons/user.svg" alt="Profile icon" />Profile</a
+              >
+            </li>
             <li>
               <a href="">
                 <img
@@ -28,27 +34,74 @@
                 />Messages
               </a>
             </li>
-            <li><a href=""><img src="./icons/clock.svg" alt="History icon" />History</li></a>
             <li>
-              <a href=""><img src="./icons/check-square.svg" alt="Tasks icon" />Tasks</a>
+              <a href=""
+                ><img src="./icons/clock.svg" alt="History icon" />History</a
+              >
             </li>
             <li>
-              <a href=""><img src="./icons/users.svg" alt="Communities icon" />Communities</a>
+              <a href=""
+                ><img src="./icons/check-square.svg" alt="Tasks icon" />Tasks</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./icons/users.svg"
+                  alt="Communities icon"
+                />Communities</a
+              >
             </li>
           </ul>
           <ul>
             <li>
-              <a href=""><img src="./icons/settings.svg" alt="Settings icon" />Settings</a>
+              <a href=""
+                ><img
+                  src="./icons/settings.svg"
+                  alt="Settings icon"
+                />Settings</a
+              >
             </li>
             <li>
-              <a href=""><img src="./icons/help-circle.svg" alt="Support icon" />Support</a>
+              <a href=""
+                ><img
+                  src="./icons/help-circle.svg"
+                  alt="Support icon"
+                />Support</a
+              >
             </li>
-            <li><a href=""><img src="./icons/shield.svg" alt="Privacy icon" />Privacy</li></a>
+            <li>
+              <a href=""
+                ><img src="./icons/shield.svg" alt="Privacy icon" />Privacy</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
       <header>
-        <div class="header-top"></div>
+        <div class="header-top">
+          <div class="header-search">
+            <label for="searchbar"
+              ><img src="./icons/search.svg" alt="Search icon" /><input
+                type="text"
+                name="search-query"
+                id="searchbar"
+            /></label>
+          </div>
+          <div class="header-profile">
+            <button class="notifications">
+              <img src="./icons/bell.svg" alt="Notifications button icon" />
+            </button>
+            <div class="goto-profile">
+              <a href="">
+                <img
+                  src="./img/bill-terrier.png"
+                  alt="Current user's profile picture"
+                />Bill Terrier
+              </a>
+            </div>
+          </div>
+        </div>
         <div class="header-bot"></div>
       </header>
       <main></main>

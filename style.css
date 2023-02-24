@@ -457,7 +457,7 @@ header {
   border: none;
   background-color: transparent;
   border-radius: 100%;
-  margin-right: 24px;
+  margin-right: 8px;
 }
 
 .header-profile .notifications-bell:hover {

@@ -502,13 +502,14 @@ header {
 }
 
 .header-bot {
-  grid-template-columns: minmax(350px, 600px) auto;
+  grid-template-columns: max-content auto;
 }
 
 .header-hello {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: max-content 1fr;
   align-items: center;
+  margin-right: 24px;
 }
 
 .header-hello img {

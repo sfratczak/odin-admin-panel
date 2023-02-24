@@ -447,12 +447,49 @@ header {
 
 .header-profile {
   display: grid;
-  grid-template-columns: auto auto 1fr;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.header-profile .notifications-bell {
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+  border-radius: 100%;
+  margin-right: 24px;
+}
+
+.header-profile .notifications-bell:hover {
+  cursor: pointer;
+  background-color: blue;
+  transition: 0.3s;
+}
+
+.header-profile .notifications-bell img {
+  height: 1.75rem;
+}
+
+.goto-profile a {
+  max-width: fit-content;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: left;
+  align-items: center;
+  font-size: 1.25rem;
+  padding: 8px 24px 8px 8px;
+  border-radius: 36px;
+}
+
+.goto-profile a:hover {
+  background-color: blue;
+  transition: 0.3s;
 }
 
 .goto-profile img {
-  height: 45px;
+  height: 44px;
   border-radius: 100%;
+  margin-right: 24px;
 }
 
 main {

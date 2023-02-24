@@ -412,14 +412,18 @@ header {
   background-color: green;
 }
 
-.header-top {
-  grid-row: 1 / 2;
-  background-color: darkgreen;
+.header-top,
+.header-bot {
   padding: 0 45px;
   display: grid;
   align-items: center;
   justify-content: space-between;
-  grid-template-columns: minmax(300px, 600px) 300px;
+}
+
+.header-top {
+  grid-row: 1 / 2;
+  grid-template-columns: minmax(350px, 600px) auto;
+  background-color: darkgreen;
 }
 
 .header-search {
@@ -447,8 +451,9 @@ header {
 
 .header-profile {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr max-content;
   align-items: center;
+  justify-items: end;
 }
 
 .header-profile .notifications-bell {
@@ -468,6 +473,10 @@ header {
 
 .header-profile .notifications-bell img {
   height: 1.75rem;
+}
+
+.goto-profile {
+  max-width: max-content;
 }
 
 .goto-profile a {
@@ -490,6 +499,52 @@ header {
   height: 44px;
   border-radius: 100%;
   margin-right: 24px;
+}
+
+.header-bot {
+  grid-template-columns: minmax(350px, 600px) auto;
+}
+
+.header-hello {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.header-hello img {
+  height: 75px;
+  border-radius: 35px;
+  margin-right: 20px;
+}
+
+.header-hello .hello-text {
+  margin: 0;
+  line-height: 1.75rem;
+}
+
+.header-hello .hello-username {
+  font-size: 1.75rem;
+}
+
+.header-action-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 20px;
+}
+
+.header-action-buttons button {
+  width: 100px;
+  height: 40px;
+  display: grid;
+  align-items: center;
+  background-color: blue;
+  border: none;
+  border-radius: 20px;
+}
+
+.header-action-buttons button:hover {
+  cursor: pointer;
+  background-color: lightblue;
 }
 
 main {

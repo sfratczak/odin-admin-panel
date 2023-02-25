@@ -374,7 +374,7 @@ template {
 .container {
   height: 100vh;
   display: grid;
-  grid-template: 180px 1fr / 300px 1fr;
+  grid-template: 180px 1fr / max-content 1fr;
 }
 
 .sidebar {
@@ -385,6 +385,7 @@ template {
   background-color: var(--clr-main-500);
   font-size: 1.25rem;
   z-index: 2;
+  padding-right: 45px;
 }
 
 .sidebar img {
@@ -424,6 +425,7 @@ template {
 
 .sidebar-nav li {
   margin: 0.5rem 0;
+  list-style-type: none;
 }
 
 .sidebar-nav img {

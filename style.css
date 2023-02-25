@@ -351,6 +351,25 @@ template {
 }
 
 /* END NORMALIZE.CSS */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap");
+
+:root {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  --clr-main-300: #7dd3fc;
+  --clr-main-500: #0ea5e9;
+  --clr-main-700: #0369a1;
+  --zinc-50: #fafafa;
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-400: #a1a1aa;
+  --zinc-500: #71717a;
+  --zinc-600: #52525b;
+  --zinc-700: #3f3f46;
+  --zinc-800: #27272a;
+  --zinc-900: #18181b;
+}
 
 .container {
   height: 100vh;
@@ -363,8 +382,15 @@ template {
   grid-row: 1 / -1;
   display: grid;
   grid-template-rows: 80px 1fr;
-  background-color: blue;
+  background-color: var(--clr-main-500);
   font-size: 1.25rem;
+  z-index: 2;
+}
+
+.sidebar img {
+  /* this filter changes color of the svg  - via https://codepen.io/sosuke/pen/Pjoqqp/ */
+  filter: invert(91%) sepia(57%) saturate(3%) hue-rotate(194deg)
+    brightness(108%) contrast(96%);
 }
 
 .sidebar-logo a,
@@ -372,6 +398,9 @@ template {
   display: grid;
   grid-template-columns: 80px 1fr;
   align-items: center;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--zinc-50);
 }
 
 .sidebar-logo a {
@@ -380,7 +409,6 @@ template {
 
 .sidebar-logo {
   grid-row: 1 / 2;
-  background-color: purple;
   font-size: 1.75rem;
 }
 
@@ -409,7 +437,9 @@ header {
   grid-row: 1 / 2;
   display: grid;
   grid-template-rows: 80px 100px;
-  background-color: green;
+  background-color: var(--zinc-50);
+  z-index: 1;
+  box-shadow: 0px 4px 4px var(--zinc-300);
 }
 
 .header-top,
@@ -420,10 +450,15 @@ header {
   justify-content: space-between;
 }
 
+.header-search label,
+.notifications-bell img {
+  filter: invert(3%) sepia(2%) saturate(6053%) hue-rotate(201deg)
+    brightness(97%) contrast(86%);
+}
+
 .header-top {
   grid-row: 1 / 2;
   grid-template-columns: minmax(350px, 600px) auto;
-  background-color: darkgreen;
 }
 
 .header-search {
@@ -447,6 +482,7 @@ header {
   border-radius: 1rem;
   border: none;
   padding-left: 2ch;
+  background-color: var(--zinc-200);
 }
 
 .header-profile {
@@ -467,7 +503,7 @@ header {
 
 .header-profile .notifications-bell:hover {
   cursor: pointer;
-  background-color: blue;
+  background-color: var(--clr-main-300);
   transition: 0.3s;
 }
 
@@ -488,10 +524,13 @@ header {
   font-size: 1.25rem;
   padding: 8px 24px 8px 8px;
   border-radius: 36px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--zinc-900);
 }
 
 .goto-profile a:hover {
-  background-color: blue;
+  background-color: var(--clr-main-300);
   transition: 0.3s;
 }
 
@@ -521,6 +560,7 @@ header {
 .header-hello .hello-text {
   margin: 0;
   line-height: 1.75rem;
+  font-weight: 500;
 }
 
 .header-hello .hello-username {
@@ -538,16 +578,17 @@ header {
   height: 40px;
   display: grid;
   align-items: center;
-  background-color: blue;
+  background-color: var(--clr-main-500);
+  color: var(--zinc-50);
   border: none;
   border-radius: 20px;
 }
 
 .header-action-buttons button:hover {
   cursor: pointer;
-  background-color: lightblue;
+  background-color: var(--clr-main-300);
 }
 
 main {
-  background-color: grey;
+  background-color: var(--zinc-200);
 }

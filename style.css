@@ -562,10 +562,11 @@ header {
   grid-template-columns: max-content 1fr;
   align-items: center;
   margin-right: 24px;
+  color: var(--zinc-600);
 }
 
 .header-hello img {
-  height: 75px;
+  height: 64px;
   border-radius: 35px;
   margin-right: 20px;
 }
@@ -578,6 +579,10 @@ header {
 
 .header-hello .hello-username {
   font-size: 1.75rem;
+}
+
+.header-hello .hello-username strong {
+  color: var(--zinc-900);
 }
 
 .header-action-buttons {

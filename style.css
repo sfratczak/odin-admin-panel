@@ -641,8 +641,28 @@ main {
 }
 
 .project-card {
-  height: 215px;
+  height: 200px;
   background-color: var(--zinc-100);
   border-left: 8px solid orange;
   border-radius: 8px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  align-items: center;
+}
+
+.project-card h3,
+.project-card p {
+  margin: 0 0 8px 0;
+}
+
+.project-card h3 {
+  color: var(--zinc-700);
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  text-overflow: ellipsis;
+  color: var(--zinc-600);
 }

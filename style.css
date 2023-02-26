@@ -609,4 +609,26 @@ header {
 
 main {
   background-color: var(--zinc-200);
+  display: grid;
+  grid-template-columns: 1fr 275px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.main-projects {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+
+.main-other {
+  display: grid;
+  grid-template-rows: 50px auto 50px auto;
+}
+
+.header-text {
+  margin-top: 0;
+  margin-bottom: 8px;
+  grid-column: 1 / -1;
+  display: grid;
+  align-items: end;
 }

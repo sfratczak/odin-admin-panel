@@ -356,8 +356,11 @@ template {
 :root {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
+  --clr-main-200: #bae6fd;
   --clr-main-300: #7dd3fc;
+  --clr-main-400: #38bdf8;
   --clr-main-500: #0ea5e9;
+  --clr-main-600: #0284c7;
   --clr-main-700: #0369a1;
   --zinc-50: #fafafa;
   --zinc-100: #f4f4f5;
@@ -385,7 +388,6 @@ template {
   background-color: var(--clr-main-500);
   font-size: 1.25rem;
   z-index: 1;
-  padding-right: 45px;
   box-shadow: 4px 0px 4px var(--zinc-300);
 }
 
@@ -398,11 +400,16 @@ template {
 .sidebar-logo a,
 .sidebar-nav a {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 80px 180px;
   align-items: center;
   font-weight: 500;
   text-decoration: none;
   color: var(--zinc-50);
+}
+
+.sidebar-logo a:hover,
+.sidebar-nav a:hover {
+  background-color: var(--clr-main-600);
 }
 
 .sidebar-logo a {
@@ -425,8 +432,11 @@ template {
 }
 
 .sidebar-nav li {
-  margin: 0.5rem 0;
   list-style-type: none;
+}
+
+.sidebar-nav a {
+  height: 3rem;
 }
 
 .sidebar-nav img {
@@ -506,7 +516,7 @@ header {
 
 .header-profile .notifications-bell:hover {
   cursor: pointer;
-  background-color: var(--clr-main-300);
+  background-color: var(--clr-main-200);
   transition: 0.3s;
 }
 
@@ -533,7 +543,7 @@ header {
 }
 
 .goto-profile a:hover {
-  background-color: var(--clr-main-300);
+  background-color: var(--clr-main-200);
   transition: 0.3s;
 }
 
@@ -589,7 +599,7 @@ header {
 
 .header-action-buttons button:hover {
   cursor: pointer;
-  background-color: var(--clr-main-300);
+  background-color: var(--clr-main-600);
 }
 
 main {

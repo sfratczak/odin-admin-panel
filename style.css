@@ -632,3 +632,17 @@ main {
   display: grid;
   align-items: end;
 }
+
+.user-projects {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 380px);
+  grid-auto-rows: max-content;
+}
+
+.project-card {
+  height: 215px;
+  background-color: var(--zinc-100);
+  border-left: 8px solid orange;
+  border-radius: 8px;
+}

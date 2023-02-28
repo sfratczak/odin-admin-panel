@@ -542,7 +542,8 @@ header {
   color: var(--zinc-900);
 }
 
-.goto-profile a:hover {
+.goto-profile a:hover,
+.project-card-buttons button:hover {
   background-color: var(--clr-main-200);
   transition: 0.3s;
 }
@@ -665,4 +666,19 @@ main {
   line-height: 1.3rem;
   text-overflow: ellipsis;
   color: var(--zinc-600);
+}
+
+.project-card-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: 40px;
+  justify-content: end;
+  gap: 8px;
+}
+
+.project-card-buttons button {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
 }

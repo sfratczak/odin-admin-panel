@@ -628,7 +628,7 @@ main {
 
 .header-text {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   grid-column: 1 / -1;
   display: grid;
   align-items: end;
@@ -654,7 +654,6 @@ main {
 
 .project-card h3,
 .project-card p {
-  margin: 0 0 8px 0;
   overflow: hidden;
   width: 332px;
 }

@@ -648,23 +648,27 @@ main {
   border-radius: 8px;
   padding: 20px;
   display: grid;
-  grid-template-rows: 1fr 50px;
+  grid-template-rows: 1fr 40px;
   align-items: center;
 }
 
 .project-card h3,
 .project-card p {
   margin: 0 0 8px 0;
+  overflow: hidden;
+  width: 332px;
 }
 
 .project-card h3 {
   color: var(--zinc-700);
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .project-card p {
   font-size: 1rem;
   line-height: 1.3rem;
-  text-overflow: ellipsis;
+  height: 5rem;
   color: var(--zinc-600);
 }
 

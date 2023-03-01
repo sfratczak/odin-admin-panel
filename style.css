@@ -374,6 +374,10 @@ template {
   --zinc-900: #18181b;
 }
 
+.soft-boxshadow {
+  box-shadow: 4px 4px 4px var(--zinc-300);
+}
+
 .container {
   height: 100vh;
   display: grid;
@@ -388,7 +392,6 @@ template {
   background-color: var(--clr-main-500);
   font-size: 1.25rem;
   z-index: 1;
-  box-shadow: 4px 0px 4px var(--zinc-300);
 }
 
 .sidebar img {
@@ -452,7 +455,6 @@ header {
   grid-template-rows: 80px 100px;
   background-color: var(--zinc-50);
   z-index: 1;
-  box-shadow: 4px 4px 4px var(--zinc-300);
 }
 
 .header-top,

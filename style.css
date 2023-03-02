@@ -689,13 +689,17 @@ main {
   cursor: pointer;
 }
 
-.announcements-card {
+.announcements-card,
+.trending-card {
   display: grid;
   padding: 10px 20px;
-  grid-auto-rows: 125px;
   background-color: var(--zinc-100);
   border-radius: 8px;
   margin-bottom: 20px;
+}
+
+.announcements-card {
+  grid-auto-rows: 125px;
 }
 
 .announcement {
@@ -720,4 +724,39 @@ main {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+}
+
+.trending-person {
+  display: grid;
+  height: 60px;
+  grid-template: 1fr 1fr / 60px 1fr;
+  column-gap: 12px;
+  row-gap: 4px;
+  padding: 10px 0;
+}
+
+.trending-person img {
+  height: inherit;
+  border-radius: 50%;
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+}
+
+.trending-person .trend-handle,
+.trending-person .trend-subtitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.trending-person .trend-handle {
+  display: grid;
+  align-content: end;
+  color: var(--zinc-700);
+}
+
+.trending-person .trend-subtitle {
+  color: var(--zinc-500);
 }

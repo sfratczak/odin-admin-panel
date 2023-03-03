@@ -351,7 +351,7 @@ template {
 }
 
 /* END NORMALIZE.CSS */
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;800&display=swap");
 
 :root {
   font-family: "Work Sans", sans-serif;
@@ -390,7 +390,7 @@ template {
   display: grid;
   grid-template-rows: 80px 1fr;
   background-color: var(--clr-main-500);
-  font-size: 1.25rem;
+  font-size: 1rem;
   z-index: 1;
 }
 
@@ -403,7 +403,7 @@ template {
 .sidebar-logo a,
 .sidebar-nav a {
   display: grid;
-  grid-template-columns: 80px 180px;
+  grid-template-columns: 72px 160px;
   align-items: center;
   font-weight: 500;
   text-decoration: none;
@@ -417,21 +417,22 @@ template {
 
 .sidebar-logo a {
   grid-template-rows: 80px;
+  font-weight: 800;
 }
 
 .sidebar-logo {
   grid-row: 1 / 2;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .sidebar-logo img {
-  height: 3rem;
+  height: 2.5rem;
   justify-self: center;
 }
 
 .sidebar-nav ul {
-  padding: 1rem 0;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 24px 0;
 }
 
 .sidebar-nav li {
@@ -439,11 +440,11 @@ template {
 }
 
 .sidebar-nav a {
-  height: 3rem;
+  height: 2.5rem;
 }
 
 .sidebar-nav img {
-  height: 1.75rem;
+  height: 1.5rem;
   justify-self: center;
   margin: 0.5rem 0;
 }

@@ -654,8 +654,7 @@ main {
   align-items: center;
 }
 
-.project-card h3,
-.project-card p {
+.project-card h3 {
   overflow: hidden;
   width: 332px;
 }
@@ -665,6 +664,14 @@ main {
   color: var(--zinc-700);
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.project-card p,
+.announcements-card p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .project-card p {
@@ -720,10 +727,6 @@ main {
 .announcements-card p {
   margin: 4px 0;
   font-size: 0.85rem;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
 }
 
 .trending-person {

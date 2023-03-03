@@ -381,7 +381,7 @@ template {
 .container {
   height: 100vh;
   display: grid;
-  grid-template: 144px 1fr / max-content 1fr;
+  grid-template: 144px 1fr / 224px 1fr;
 }
 
 .sidebar {
@@ -398,6 +398,11 @@ template {
   /* this filter changes color of the svg  - via https://codepen.io/sosuke/pen/Pjoqqp/ */
   filter: invert(91%) sepia(57%) saturate(3%) hue-rotate(194deg)
     brightness(108%) contrast(96%);
+}
+
+.sidebar-logo a,
+.sidebar-nav {
+  position: fixed;
 }
 
 .sidebar-logo a,
@@ -424,6 +429,10 @@ template {
 .sidebar-logo img {
   height: 2.5rem;
   justify-self: center;
+}
+
+.sidebar-nav {
+  top: 64px;
 }
 
 .sidebar-nav ul {
